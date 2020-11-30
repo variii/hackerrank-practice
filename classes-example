@@ -1,0 +1,58 @@
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+using namespace std;
+
+class Book{
+public:
+	string title, author;
+	int pages;
+
+
+};
+class Car{
+public:
+	string brand, model;
+	int horsepower;
+
+	// constructor
+	Car(string b, string m, int hp){
+		// initialize private variables 
+		brand = b;
+		model = m;
+		horsepower = hp;
+	}
+
+	//copy constructor (allows copying of the contents of Car object)
+
+	Car(Car &obj){ //pass a Car object to the constructor
+		brand = obj.brand;
+		model = obj.model;
+		horsepower = obj.horsepower;
+
+	}
+
+};
+
+
+int main(){
+	//without constructor
+	/* 
+	Car myFirstCar;
+	myFirstCar.brand = "Suzuki";
+	myFirstCar.model = "Swift";
+	myFirstCar.horsepower = 110;
+	*/ 
+
+	// with a constructor 
+	Car myCurrentCar("Hyundai", "Ioniq", 139);
+	cout << myCurrentCar.brand << " " << myCurrentCar.model << " has a horsepower of " << myCurrentCar.horsepower << endl;
+
+	// copy constructor
+	Car myCurrentCarCopy = myCurrentCar; 
+	cout << myCurrentCarCopy.brand << " " << myCurrentCarCopy.model << " has a horsepower of " << myCurrentCarCopy.horsepower << endl;
+
+
+
+	return 0;
+} //end main
