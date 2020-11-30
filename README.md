@@ -1,4 +1,4 @@
-# hackerrank-practice
+# Introduction to C++
 
 A to Z to get you started with C++ in one post, with examples from Hacker Rank C++ practices. 
 This post covers the basics, and covers many practical examples in C++.
