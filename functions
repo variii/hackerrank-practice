@@ -1,0 +1,11 @@
+int a, b, c, d;
+// get user input of the 4 numbers a, b, c, d 
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max_of_four(a, b, c, d);
+    printf("%d", ans);
+	return 0;
+} // end main
+
+// define function to find the max of four using a nested ternary conditional operator method
+int max_of_four(int a, int b, int c, int d){
+	return ( ((a<b)?b:a)<((c<d)?d:c)?((c<d)?d:c):((a<b)?b:a) );
