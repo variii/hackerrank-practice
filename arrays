@@ -1,0 +1,34 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main(){
+int N;
+    cout << "Enter Array Size: ";
+    cin >> N; // enter no. of elements in the array
+    int arr[N];
+    cout << "Enter Array Elements separated by space of size " << N << ": ";
+    for(int i = 0; i< N; i++) 
+    	cin >>  arr[i];
+    cout << "Reversed Array: ";
+    for(int i = 0; i< N; i++) 
+    	cout <<  arr[N-i-1] << " " ;   
+      
+ // make the above reversed array as a function using variable length array feature
+ cout << reverseArr(n,arr) 
+
+return 0;
+
+} //end main
+
+oid reverseArr(int n, int arr[n]){
+
+int aux[n];
+for(int i=0;i<N;i++){
+	aux[i] = arr[N-i-1]; 
+	
+}
+}
